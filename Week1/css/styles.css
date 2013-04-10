@@ -23,18 +23,47 @@ h2{
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 fieldset{
-	padding: 5px;
-	width: auto;
-	background-color: #D6D5D6;
-	border-color: #09F;
-	border-width: medium;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
 }
 legend{
 	text-align: center;
 }
+#navItems {
+	margin: 2px;
+}
+.browseItem {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#nav {
+	background-color: #CCC;
+	border: medium solid #09F;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+#mainContent {
+	padding: 5px;
+	width: auto;
+	background-color: #D6D5D6;
+	border: medium solid #09F;
+	text-align: center;
+}
+#mainForm {
+	padding: 5px;
+	width: auto;
+	background-color: #D6D5D6;
+	border: medium solid #09F;
+}
 input{
 	float: right;
 	clear: both;
+}
+#title {
 }
 select{
 	float: right;
@@ -52,9 +81,6 @@ ul{
 .import{
 	list-style-type: square;
 }
-.centered{
-	text-align: center;
-}
 #edit{
 	padding-right: 5px;
 	margin-left: -30px;
@@ -62,6 +88,9 @@ ul{
 .subItem{
 	margin-left: -35px;
 	margin-top: 5px;
+}
+#search {
+	float: right;
 }
 .listItem{
 	margin: 5px;

@@ -15,9 +15,27 @@
     	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-    	<h1>Game Development:</br>To Do List</h1>
-		<p class="centered">Create a list of items you have to do while you are in development of a video game.</p>
-        <!--sends the user to the add item page-->
-        <p class="centered"><a href="additem.html">Add Item</a></p>
+    	<div id="title">
+    		<h1>Game Development:</br>To Do List</h1>
+        </div>
+        <div id="mainContent">
+        	<a href="additem.html"><img src="img/AddItems.png" width="200" height="66"></a>
+            <p>To do list for your game development project.</p>
+    	</div>
+    	<div id="nav">
+    		<h2>Browse Categories</h2>
+        	<p id="navItems">
+                <a href="#" class="browseItem"><img src="img/Programming.png" width="50" height="50"></a>
+                <a href="#" class="browseItem"><img src="img/Design.png" width="50" height="50"></a>               
+                <a href="#" class="browseItem"><img src="img/Art.png" width="50" height="50"></a>             
+                <a href="#" class="browseItem"><img src="img/Sound.png" width="50" height="50"></a>               
+                <a href="#" class="browseItem"><img src="img/UI.png" width="50" height="50"></a>
+            </p>
+            <form>
+                <fieldset>
+                    <input name="search" type="text" id="search" value="search for item">
+                </fieldset>
+            </form>       
+        </div>
 	</body>
 </html>
