@@ -90,7 +90,8 @@ ul{
 	margin-top: 5px;
 }
 #search {
-	float: right;
+	float: left;
+	clear: left;
 }
 .listItem{
 	margin: 5px;
