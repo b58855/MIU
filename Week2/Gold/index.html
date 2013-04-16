@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+		<meta charset="utf-8"/>
+        <meta name="description" content="To do list"/>
+        <meta name="keywords" content=""/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="viewport" content="user-scalable=no, width=device-width"/>
+        <meta name="viewport" content="target-densitydpi=device-dpi"/>
+        <meta name="HandheldFriendly" content="True"/>
+        <meta name="MobileOptimized" content="320"/>
+        
+		<title>Home</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    	<link href="css/styles.css" rel="stylesheet" type="text/css">
+<body>
+	<!--Home-->
+	<div data-role="page" id="home">
+    	<div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>Game Developer TDL</h1>
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#addItem">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+        	<!--Feature-->
+            <h3>Create and add new to do items to your to do list.</h3>
+            <!--Browse-->
+            <ul data-role="listview" data-inset="true">
+            	<li data-role="list-divider">Browse</li>
+            	<li>
+                	<a href=#design>
+           	    	<img src="img/Design.png" width="50" height="50" alt="Design"/>
+                    <h3>Design</h3>
+                    <span class="ui-li-count">4</span>
+                    </a>
+                </li>
+                <li>
+                	<a href=#programming>
+           	    	<img src="img/Programming.png" width="50" height="50" alt="Design" />
+                    <h3>Programming</h3>
+                    <span class="ui-li-count">4</span>
+                    </a>
+                </li>
+                <li>
+                	<a href=#art>
+           	    	<img src="img/Art.png" width="50" height="50" alt="Design" />
+                    <h3>Art</h3>
+                    <span class="ui-li-count">4</span>
+                    </a>
+                </li>
+                <li>
+                	<a href=#sound>
+           	    	<img src="img/Sound.png" width="50" height="50" alt="Design" />
+                    <h3>Sound</h3>
+                    <span class="ui-li-count">4</span>
+                    </a>
+                </li>
+                <li>
+                	<a href=#ui>
+           	    	<img src="img/UI.png" width="50" height="50" alt="Design" />
+                    <h3>UI</h3>
+                    <span class="ui-li-count">4</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Design Browse Page-->
+    <div data-role="page" id="design">
+    	<div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>Game Developer TDL</h1>
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#browse">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true" data-filter-theme="c">
+                <li data-role="collapsible">
+                    <h3>Design Level 1</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 03/22/2013<br />
+                        End Date: 03/28/2013<br />
+                        Hours: 30<br />
+                        Description: Design the first level, "Ides of March" of the game. Start with a bang for an introduction
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Design Level 2</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 05/20/2013<br />
+                        End Date: 05/28/2013<br />
+                        Hours: 25<br />
+                        Description: Design level two, "Cloud 9"
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Combat</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 06/10/2013<br />
+                        End Date: 06/28/2013<br />
+                        Hours: 50<br />
+                        Description: Work on the initial strength and balancing of the weapons
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Design Level 3</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 06/22/2013<br />
+                        End Date: 06/28/2013<br />
+                        Hours: 25<br />
+                        Description: Design Level Three, "We are the Champions: Of the World"
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Progrmmming Browse Page-->
+    <div data-role="page" id="programming">
+    	<div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>Game Developer TDL</h1>
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#browse">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+            	<li data-role="collapsible">
+                    <h3>Particle Engine</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Create a good and efficient particle engine
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Level 1 Scripting</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Script all of the events of level one
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Enemy AI</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 05/26/2013<br />
+                        Hours: 50<br />
+                        Description: Get a working Enemy AI system up and running that is usable for testing
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Level Programming</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 06/01/2013<br />
+                        End Date: 06/10/2013<br />
+                        Hours: 10<br />
+                        Description: Create the function that allows the game to go from one level to the next
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Art Browse Page-->
+    <div data-role="page" id="art" data-add-back-btn="true">
+    	<div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>Game Developer TDL</h1>
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#browse">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+                <li data-role="collapsible">
+                    <h3>Main Character Concept Art</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 03/19/2013<br />
+                        End Date: 03/24/2013<br />
+                        Hours: 5<br />
+                        Description: Outline some first ideas
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Weapon Concept</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 04/02/2013<br />
+                        End Date: 04/04/2013<br />
+                        Hours: 20<br />
+                        Description: Come up with some concept ideas for the weapons
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Main Antagonist Concept</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 04/19/2013<br />
+                        End Date: 04/22/2013<br />
+                        Hours: 10<br />
+                        Description: Brainstorm, concept ideas for the main antagonist
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Level Art</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/09/2013<br />
+                        End Date: 04/24/2013<br />
+                        Hours: 30<br />
+                        Description: Work on the level art for the first level
+                    </p>
+                </li>              
+            </ul>
+        </div>
+    </div>
+    <!--Sound Browse Page-->
+    <div data-role="page" id="sound" data-add-back-btn="true">
+    	<div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>Game Developer TDL</h1>
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#browse">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+                <li data-role="collapsible">
+                    <h3>Gun Sounds</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 03/20/2013<br />
+                        End Date: 03/20/2013<br />
+                        Hours: 8<br />
+                        Description: Go to the firing range, and record some sounds for pistols and assault rifles
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>UI Sounds</h3>
+                    <p>
+                        Least Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Create sounds that fit the theme or the game, and style of the UI elements
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Vehicle Sounds</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 06/10/2013<br />
+                        End Date: 06/30/2013<br />
+                        Hours: 30<br />
+                        Description: Gather potential sounds for in game vehicles
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Voice Acting</h3>
+                    <p>
+                        Least Imporatance<br />
+                        Start Date: 08/01/2013<br />
+                        End Date: 10/24/2013<br />
+                        Hours: 200<br />
+                        Description: Record the voice actors
+                    </p>
+                </li>              
+            </ul>
+        </div>
+    </div>
+    <!--UI Browse Page-->
+    <div data-role="page" id="ui" data-add-back-btn="true">
+    	<div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>Game Developer TDL</h1>
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#browse">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+                <li data-role="collapsible">
+                    <h3>Start Menu</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 03/19/2013<br />
+                        End Date: 03/23/2013<br />
+                        Hours: 15<br />
+                        Description: Design and program the start menu
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Pause Menu</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 04/02/2013<br />
+                        End Date: 04/04/2013<br />
+                        Hours: 10<br />
+                        Description: Create an efficient and clean pause menu
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>HUD</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Create the most important UI element the HUD to be unobtrusive, but informative
+                    </p>
+                </li>
+                <li data-role="collapsible">
+                    <h3>Multiplayer Menu</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 07/19/2013<br />
+                        End Date: 07/24/2013<br />
+                        Hours: 15<br />
+                        Description: Design and Implement the multiplayer pre-game menu
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Info-->
+    <div data-role="page" id="info">
+    	<div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>Game Developer TDL</h1>
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#addItem">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+        	<ul data-role="listview">
+                <li><a href="../Bronze/index.html" data-ajax="false">Bronze</a></li>
+                <li><a href="https://github.com/b58855/MIU/tree/master/Week2" data-ajax="false">Git Repo</a></li>
+                <li><a href="http://b58855.github.io/MIU/Week2/Gold" data-ajax="false">Git gh-pages</a></li>
+            </ul>
+        </div>
+    </div>
+	<!--Javascript Files-->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
