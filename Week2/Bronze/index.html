@@ -21,26 +21,18 @@
 	<!--Home-->
 	<div data-role="page" id="home">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer TDL</h1>
-            <!--NavBar-->
-            <div data-role="navbar">
-            	<ul>
-                	<li><a href="#home">Home</a></li>
-                    <li><a href="#info">Info</a></li>
-                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
-                </ul>
-            </div>
+        	<h1>Game Developer Aid</h1>
         </div>
         <div data-role="content">
         	<!--Feature-->
-            <h3>Create and add new to do items to your to do list.</h3>
+            <div id="feature">
+            </div>
             <!--Browse-->
             <ul data-role="listview" data-inset="true">
             	<li data-role="list-divider">Browse</li>
                 <!--Design List Items-->
             	<li data-role="collapsible">
                     <h3>Design</h3>
-                    <span class="ui-li-count">4</span>
                     <ul data-role="listview" data-filter="true" data-filter-theme="c">
                         <li data-role="collapsible">
                             <h3>Design Level 1</h3>
@@ -87,7 +79,6 @@
                 <!--Programming List Items-->
                 <li data-role="collapsible">
                     <h3>Programming</h3>
-                    <span class="ui-li-count">4</span>
                     <ul data-role="listview" data-filter="true">
                         <li data-role="collapsible">
                             <h3>Particle Engine</h3>
@@ -134,7 +125,6 @@
                 <!--Art List Items-->
                 <li data-role="collapsible">
                     <h3>Art</h3>
-                    <span class="ui-li-count">4</span>
                     <ul data-role="listview" data-filter="true">
                         <li data-role="collapsible">
                             <h3>Main Character Concept Art</h3>
@@ -181,7 +171,6 @@
                 <!--Sound List Items-->
                 <li data-role="collapsible">
                     <h3>Sound</h3>
-                    <span class="ui-li-count">4</span>
                      <ul data-role="listview" data-filter="true">
                         <li data-role="collapsible">
                             <h3>Gun Sounds</h3>
@@ -228,7 +217,6 @@
                 <!--UI List Items-->
                 <li data-role="collapsible">
                     <h3>UI</h3>
-                    <span class="ui-li-count">4</span>
                     <ul data-role="listview" data-filter="true">
                         <li data-role="collapsible">
                             <h3>Start Menu</h3>
@@ -274,20 +262,22 @@
                 </li>
             </ul>
         </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home" class="ui-btn-active">Home</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!--Info-->
     <div data-role="page" id="info">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer TDL</h1>
-            <!--NavBar-->
-            <div data-role="navbar">
-            	<ul>
-                	<li><a href="#home">Home</a></li>
-                    <li><a href="#info">Info</a></li>
-                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
-                </ul>
-            </div>
+        	<h1>Game Developer Aid</h1>
         </div>
         <div data-role="content">
         	<ul data-role="listview">
@@ -295,6 +285,16 @@
                 <li><a href="https://github.com/b58855/MIU/tree/master/Week2" data-ajax="false">Git Repo</a></li>
                 <li><a href="http://b58855.github.io/MIU/Week2/Bronze" data-ajax="false">Git gh-pages</a></li>
             </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home" class="ui-btn-active">Home</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 	<!--Javascript Files-->

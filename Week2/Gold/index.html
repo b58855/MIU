@@ -21,53 +21,54 @@
 	<!--Home-->
 	<div data-role="page" id="home">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer TDL</h1>
+        	<h2>Game Developer Aid</h2>
             <!--NavBar-->
             <div data-role="navbar">
             	<ul>
-                	<li><a href="#home">Home</a></li>
+                	<li><a href="#home" class="ui-btn-active">Home</a></li>
                     <li><a href="#info">Info</a></li>
-                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
+                    <li><a href="addItem.html" data-ajax="false" data-theme="e">Add Item</a></li>
                 </ul>
             </div>
         </div>
         <div data-role="content">
         	<!--Feature-->
-            <h3>Create and add new to do items to your to do list.</h3>
+        	<div id="feature">
+            </div>
             <!--Browse-->
             <ul data-role="listview" data-inset="true">
-            	<li data-role="list-divider">Browse</li>
+            	<li data-role="list-divider"  class="centerText">Browse</li>
             	<li>
                 	<a href=#design>
-           	    	<img src="img/Design.png" width="50" height="50" alt="Design"/>
+           	    	<img src="img/Design80.png" width="80" height="80" alt="Design"/>
                     <h3>Design</h3>
                     <span class="ui-li-count">4</span>
                     </a>
                 </li>
                 <li>
                 	<a href=#programming>
-           	    	<img src="img/Programming.png" width="50" height="50" alt="Design" />
+           	    	<img src="img/Programming80.png" width="80" height="80" alt="Design" />
                     <h3>Programming</h3>
                     <span class="ui-li-count">4</span>
                     </a>
                 </li>
                 <li>
                 	<a href=#art>
-           	    	<img src="img/Art.png" width="50" height="50" alt="Design" />
+           	    	<img src="img/Art80.png" width="80" height="80" alt="Design" />
                     <h3>Art</h3>
                     <span class="ui-li-count">4</span>
                     </a>
                 </li>
                 <li>
                 	<a href=#sound>
-           	    	<img src="img/Sound.png" width="50" height="50" alt="Design" />
+           	    	<img src="img/Sound80.png" width="80" height="80" alt="Design" />
                     <h3>Sound</h3>
                     <span class="ui-li-count">4</span>
                     </a>
                 </li>
                 <li>
                 	<a href=#ui>
-           	    	<img src="img/UI.png" width="50" height="50" alt="Design" />
+           	    	<img src="img/UI80.png" width="80" height="80" alt="Design" />
                     <h3>UI</h3>
                     <span class="ui-li-count">4</span>
                     </a>
@@ -78,19 +79,26 @@
     <!--Design Browse Page-->
     <div data-role="page" id="design">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer TDL</h1>
+			<h1>Game Developer Aid</h1>
             <!--NavBar-->
             <div data-role="navbar">
             	<ul>
                 	<li><a href="#home">Home</a></li>
                     <li><a href="#info">Info</a></li>
-                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
+                    <li><a href="addItem.html" data-ajax="false" data-theme="e">Add Item</a></li>
                 </ul>
             </div>
         </div>
         <div data-role="content">
-            <ul data-role="listview" data-filter="true" data-filter-theme="c">
-                <li data-role="collapsible">
+        	<ul data-role="listview">
+                <li>
+                    <img src="img/Design80.png" width="80" height="80" />
+                    <h3>Design Items</h3>
+                    <p>All of your items within the Design category.</p>
+                </li>
+            </ul>
+            <ul data-role="listview" data-filter="true">
+                <div data-role="collapsible">
                     <h3>Design Level 1</h3>
                     <p>
                         High Imporatance<br />
@@ -99,8 +107,8 @@
                         Hours: 30<br />
                         Description: Design the first level, "Ides of March" of the game. Start with a bang for an introduction
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Design Level 2</h3>
                     <p>
                         Medium Imporatance<br />
@@ -109,8 +117,8 @@
                         Hours: 25<br />
                         Description: Design level two, "Cloud 9"
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Combat</h3>
                     <p>
                         High Imporatance<br />
@@ -119,8 +127,8 @@
                         Hours: 50<br />
                         Description: Work on the initial strength and balancing of the weapons
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Design Level 3</h3>
                     <p>
                         Low Imporatance<br />
@@ -129,26 +137,33 @@
                         Hours: 25<br />
                         Description: Design Level Three, "We are the Champions: Of the World"
                     </p>
-                </li>
+                </div>
             </ul>
         </div>
     </div>
     <!--Progrmmming Browse Page-->
     <div data-role="page" id="programming">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer TDL</h1>
+        	<h1>Game Developer Aid</h1>
             <!--NavBar-->
             <div data-role="navbar">
             	<ul>
                 	<li><a href="#home">Home</a></li>
                     <li><a href="#info">Info</a></li>
-                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
+                    <li><a href="addItem.html" data-ajax="false" data-theme="e">Add Item</a></li>
                 </ul>
             </div>
         </div>
         <div data-role="content">
+        	<ul data-role="listview">
+                <li>
+                    <img src="img/Programming80.png" width="80" height="80" />
+                    <h3>Programming Items</h3>
+                    <p>All of your items within the Programming category.</p>
+                </li>
+            </ul>
             <ul data-role="listview" data-filter="true">
-            	<li data-role="collapsible">
+            	<div data-role="collapsible">
                     <h3>Particle Engine</h3>
                     <p>
                         High Imporatance<br />
@@ -157,8 +172,8 @@
                         Hours: 50<br />
                         Description: Create a good and efficient particle engine
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Level 1 Scripting</h3>
                     <p>
                         Medium Imporatance<br />
@@ -167,8 +182,8 @@
                         Hours: 50<br />
                         Description: Script all of the events of level one
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Enemy AI</h3>
                     <p>
                         High Imporatance<br />
@@ -177,8 +192,8 @@
                         Hours: 50<br />
                         Description: Get a working Enemy AI system up and running that is usable for testing
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Level Programming</h3>
                     <p>
                         Low Imporatance<br />
@@ -187,26 +202,34 @@
                         Hours: 10<br />
                         Description: Create the function that allows the game to go from one level to the next
                     </p>
-                </li>
+                </div>
             </ul>
         </div>
     </div>
     <!--Art Browse Page-->
-    <div data-role="page" id="art" data-add-back-btn="true">
+    <div data-role="page" id="art">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer TDL</h1>
+        	<h1>Game Developer Aid</h1>
             <!--NavBar-->
             <div data-role="navbar">
             	<ul>
                 	<li><a href="#home">Home</a></li>
                     <li><a href="#info">Info</a></li>
-                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
+                    <li><a href="addItem.html" data-ajax="false" data-theme="e">Add Item</a></li>
                 </ul>
             </div>
         </div>
         <div data-role="content">
+        	<ul data-role="listview">
+                <li>
+                    <img src="img/Art80.png" width="80" height="80" />
+                    <h3>Art Items</h3>
+                    <p>All of your items within the Art category.</p>
+                </li>
+            </ul>
+
             <ul data-role="listview" data-filter="true">
-                <li data-role="collapsible">
+                <div data-role="collapsible">
                     <h3>Main Character Concept Art</h3>
                     <p>
                         High Imporatance<br />
@@ -215,8 +238,8 @@
                         Hours: 5<br />
                         Description: Outline some first ideas
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Weapon Concept</h3>
                     <p>
                         Low Imporatance<br />
@@ -225,8 +248,8 @@
                         Hours: 20<br />
                         Description: Come up with some concept ideas for the weapons
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Main Antagonist Concept</h3>
                     <p>
                         Low Imporatance<br />
@@ -235,8 +258,8 @@
                         Hours: 10<br />
                         Description: Brainstorm, concept ideas for the main antagonist
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Level Art</h3>
                     <p>
                         High Imporatance<br />
@@ -245,26 +268,34 @@
                         Hours: 30<br />
                         Description: Work on the level art for the first level
                     </p>
-                </li>              
+                </div>              
             </ul>
         </div>
     </div>
     <!--Sound Browse Page-->
-    <div data-role="page" id="sound" data-add-back-btn="true">
+    <div data-role="page" id="sound">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer TDL</h1>
+        	<h1>Game Developer Aid</h1>
             <!--NavBar-->
             <div data-role="navbar">
             	<ul>
                 	<li><a href="#home">Home</a></li>
                     <li><a href="#info">Info</a></li>
-                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
+                    <li><a href="addItem.html" data-ajax="false" data-theme="e">Add Item</a></li>
                 </ul>
             </div>
         </div>
         <div data-role="content">
+        	<ul data-role="listview">
+                <li>
+                    <img src="img/Sound80.png" width="80" height="80" />
+                    <h3>Sound Items</h3>
+                    <p>All of your items within the Sound category.</p>
+                </li>
+            </ul>
+
             <ul data-role="listview" data-filter="true">
-                <li data-role="collapsible">
+                <div data-role="collapsible">
                     <h3>Gun Sounds</h3>
                     <p>
                         Medium Imporatance<br />
@@ -273,8 +304,8 @@
                         Hours: 8<br />
                         Description: Go to the firing range, and record some sounds for pistols and assault rifles
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>UI Sounds</h3>
                     <p>
                         Least Imporatance<br />
@@ -283,8 +314,8 @@
                         Hours: 50<br />
                         Description: Create sounds that fit the theme or the game, and style of the UI elements
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Vehicle Sounds</h3>
                     <p>
                         Low Imporatance<br />
@@ -293,8 +324,8 @@
                         Hours: 30<br />
                         Description: Gather potential sounds for in game vehicles
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Voice Acting</h3>
                     <p>
                         Least Imporatance<br />
@@ -303,26 +334,34 @@
                         Hours: 200<br />
                         Description: Record the voice actors
                     </p>
-                </li>              
+                </div>              
             </ul>
         </div>
     </div>
     <!--UI Browse Page-->
-    <div data-role="page" id="ui" data-add-back-btn="true">
+    <div data-role="page" id="ui">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer TDL</h1>
+        	<h1>Game Developer Aid</h1>
             <!--NavBar-->
             <div data-role="navbar">
             	<ul>
                 	<li><a href="#home">Home</a></li>
                     <li><a href="#info">Info</a></li>
-                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
+                    <li><a href="addItem.html" data-ajax="false" data-theme="e">Add Item</a></li>
                 </ul>
             </div>
         </div>
         <div data-role="content">
+        	<ul data-role="listview">
+                <li>
+                    <img src="img/UI80.png" width="80" height="80" />
+                    <h3>User Interface Items</h3>
+                    <p>All of your items within the User Interface category.</p>
+                </li>
+            </ul>
+
             <ul data-role="listview" data-filter="true">
-                <li data-role="collapsible">
+                <div data-role="collapsible">
                     <h3>Start Menu</h3>
                     <p>
                         Medium Imporatance<br />
@@ -331,8 +370,8 @@
                         Hours: 15<br />
                         Description: Design and program the start menu
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Pause Menu</h3>
                     <p>
                         Medium Imporatance<br />
@@ -341,8 +380,8 @@
                         Hours: 10<br />
                         Description: Create an efficient and clean pause menu
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>HUD</h3>
                     <p>
                         High Imporatance<br />
@@ -351,8 +390,8 @@
                         Hours: 50<br />
                         Description: Create the most important UI element the HUD to be unobtrusive, but informative
                     </p>
-                </li>
-                <li data-role="collapsible">
+                </div>
+                <div data-role="collapsible">
                     <h3>Multiplayer Menu</h3>
                     <p>
                         Low Imporatance<br />
@@ -361,20 +400,20 @@
                         Hours: 15<br />
                         Description: Design and Implement the multiplayer pre-game menu
                     </p>
-                </li>
+                </div>
             </ul>
         </div>
     </div>
     <!--Info-->
     <div data-role="page" id="info">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer TDL</h1>
+        	<h1>Game Developer Aid</h1>
             <!--NavBar-->
             <div data-role="navbar">
             	<ul>
                 	<li><a href="#home">Home</a></li>
-                    <li><a href="#info">Info</a></li>
-                    <li><a href="addItem.html" data-ajax="false">Add Item</a></li>
+                    <li><a href="#info" class="ui-btn-active">Info</a></li>
+                    <li><a href="addItem.html" data-ajax="false" data-theme="e">Add Item</a></li>
                 </ul>
             </div>
         </div>

@@ -59,6 +59,9 @@ legend{
 	background-color: #D6D5D6;
 	border: medium solid #09F;
 }
+.centerText {
+	text-align: center;
+}
 input{
 	float: right;
 	clear: both;
@@ -92,6 +95,12 @@ ul{
 #search {
 	float: left;
 	clear: left;
+}
+#feature {
+	background-image: url(../img/GDA.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 200px;
 }
 .listItem{
 	margin: 5px;
