@@ -3,8 +3,6 @@ $('#home').on('pageinit', function(){
 });	
 		
 $('#addItem').on('pageinit', function(){
-	$('#startDate').datepicker("option", "defaultDate", +0 );
-
 	var aiform = $('#addItemForm');
 	var aierrorlink = $('#errorslink');
 	aiform.validate(
