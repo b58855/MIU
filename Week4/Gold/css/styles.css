@@ -36,3 +36,6 @@ label.error{
 	margin-top: 0px;
 	font-size: 11px;
 }
+.background {
+	background-image: url(../img/background.jpg);
+}

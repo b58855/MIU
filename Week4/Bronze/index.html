@@ -16,14 +16,15 @@
         
 		<title>Home</title>
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <link href="css/themes/bronze-theme.min.css" rel="stylesheet" />
     	<link href="css/styles.css" rel="stylesheet" type="text/css">
 <body>
 	<!--Home-->
 	<div data-role="page" id="home">
-    	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer Aid</h1>
+    	<div data-role="header" data-position="fixed" data-theme="a">
+   	    	<h1><img src="img/GDALogo.png" width="160" height="50" /> </h1>
         </div>
-        <div data-role="content">
+        <div data-role="content" data-theme="a">
         	<div>
                 <form>
                     <input name="search" id="search" value="" placeholder="Search" type="search">
@@ -34,12 +35,12 @@
             </div>
             <!--Browse-->
             <ul data-role="listview" data-inset="true">
-            	<li data-role="list-divider">Browse</li>
+            	<li data-role="list-divider" data-theme="a">Browse</li>
                 <!--Design List Items-->
-            	<li data-role="collapsible">
+            	<li data-role="collapsible" data-theme="c">
                     <h3>Design</h3>
                     <ul data-role="listview" data-filter="true" data-filter-theme="c">
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Design Level 1</h3>
                             <p>
                                 High Imporatance<br />
@@ -49,7 +50,7 @@
                                 Description: Design the first level, "Ides of March" of the game. Start with a bang for an introduction
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Design Level 2</h3>
                             <p>
                                 Medium Imporatance<br />
@@ -59,7 +60,7 @@
                                 Description: Design level two, "Cloud 9"
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Combat</h3>
                             <p>
                                 High Imporatance<br />
@@ -69,7 +70,7 @@
                                 Description: Work on the initial strength and balancing of the weapons
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Design Level 3</h3>
                             <p>
                                 Low Imporatance<br />
@@ -82,10 +83,10 @@
                     </ul>
                 </li>
                 <!--Programming List Items-->
-                <li data-role="collapsible">
+                <li data-role="collapsible" data-theme="c">
                     <h3>Programming</h3>
                     <ul data-role="listview" data-filter="true">
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Particle Engine</h3>
                             <p>
                                 High Imporatance<br />
@@ -95,7 +96,7 @@
                                 Description: Create a good and efficient particle engine
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Level 1 Scripting</h3>
                             <p>
                                 Medium Imporatance<br />
@@ -105,7 +106,7 @@
                                 Description: Script all of the events of level one
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Enemy AI</h3>
                             <p>
                                 High Imporatance<br />
@@ -115,7 +116,7 @@
                                 Description: Get a working Enemy AI system up and running that is usable for testing
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Level Programming</h3>
                             <p>
                                 Low Imporatance<br />
@@ -128,10 +129,10 @@
                     </ul>
                 </li>
                 <!--Art List Items-->
-                <li data-role="collapsible">
+                <li data-role="collapsible" data-theme="c">
                     <h3>Art</h3>
                     <ul data-role="listview" data-filter="true">
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Main Character Concept Art</h3>
                             <p>
                                 High Imporatance<br />
@@ -141,7 +142,7 @@
                                 Description: Outline some first ideas
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Weapon Concept</h3>
                             <p>
                                 Low Imporatance<br />
@@ -151,7 +152,7 @@
                                 Description: Come up with some concept ideas for the weapons
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Main Antagonist Concept</h3>
                             <p>
                                 Low Imporatance<br />
@@ -161,7 +162,7 @@
                                 Description: Brainstorm, concept ideas for the main antagonist
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Level Art</h3>
                             <p>
                                 High Imporatance<br />
@@ -174,10 +175,10 @@
                     </ul>
                 </li>
                 <!--Sound List Items-->
-                <li data-role="collapsible">
+                <li data-role="collapsible" data-theme="c">
                     <h3>Sound</h3>
                      <ul data-role="listview" data-filter="true">
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Gun Sounds</h3>
                             <p>
                                 Medium Imporatance<br />
@@ -187,7 +188,7 @@
                                 Description: Go to the firing range, and record some sounds for pistols and assault rifles
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>UI Sounds</h3>
                             <p>
                                 Least Imporatance<br />
@@ -197,7 +198,7 @@
                                 Description: Create sounds that fit the theme or the game, and style of the UI elements
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Vehicle Sounds</h3>
                             <p>
                                 Low Imporatance<br />
@@ -207,7 +208,7 @@
                                 Description: Gather potential sounds for in game vehicles
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Voice Acting</h3>
                             <p>
                                 Least Imporatance<br />
@@ -220,10 +221,10 @@
                     </ul>
                 </li>
                 <!--UI List Items-->
-                <li data-role="collapsible">
+                <li data-role="collapsible" data-theme="c">
                     <h3>UI</h3>
                     <ul data-role="listview" data-filter="true">
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Start Menu</h3>
                             <p>
                                 Medium Imporatance<br />
@@ -233,7 +234,7 @@
                                 Description: Design and program the start menu
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Pause Menu</h3>
                             <p>
                                 Medium Imporatance<br />
@@ -243,7 +244,7 @@
                                 Description: Create an efficient and clean pause menu
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>HUD</h3>
                             <p>
                                 High Imporatance<br />
@@ -253,7 +254,7 @@
                                 Description: Create the most important UI element the HUD to be unobtrusive, but informative
                             </p>
                         </li>
-                        <li data-role="collapsible">
+                        <li data-role="collapsible" data-theme="b">
                             <h3>Multiplayer Menu</h3>
                             <p>
                                 Low Imporatance<br />
@@ -267,7 +268,7 @@
                 </li>
             </ul>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="footer" data-position="fixed" data-theme="a">
             <!--NavBar-->
             <div data-role="navbar">
             	<ul>
@@ -282,11 +283,11 @@
 	<!--Newsstream-->
     <div data-role="page" id="allItems">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer Aid</h1>
+        	<h1><img src="img/GDALogo.png" width="160" height="50" /> </h1>
         </div>
-        <div data-role="content">
+        <div data-role="content" data-theme="b">
         	<ul data-role="listview" data-filter="true">
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Start Menu</h3>
                     <p>
                         Medium Imporatance<br />
@@ -296,7 +297,7 @@
                         Description: Design and program the start menu
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Main Character Concept Art</h3>
                     <p>
                         High Imporatance<br />
@@ -306,7 +307,7 @@
                         Description: Outline some first ideas
                     </p>
                 </div>
-                 <div data-role="collapsible">
+                 <div data-role="collapsible" data-theme="b">
 					<h3>Gun Sounds</h3>
                     <p>
                         Medium Imporatance<br />
@@ -316,7 +317,7 @@
                         Description: Go to the firing range, and record some sounds for pistols and assault rifles
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                      <h3>Design Level 1</h3>
                     <p>
                         High Imporatance<br />
@@ -326,7 +327,7 @@
                         Description: Design the first level, "Ides of March" of the game. Start with a bang for an introduction
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Particle Engine</h3>
                     <p>
                         High Imporatance<br />
@@ -336,7 +337,7 @@
                         Description: Create a good and efficient particle engine
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>HUD</h3>
                     <p>
                         High Imporatance<br />
@@ -346,7 +347,7 @@
                         Description: Create the most important UI element the HUD to be unobtrusive, but informative
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Level 1 Scripting</h3>
                     <p>
                         Medium Imporatance<br />
@@ -356,7 +357,7 @@
                         Description: Script all of the events of level one
                     </p>
                 </div>
-                 <div data-role="collapsible">
+                 <div data-role="collapsible" data-theme="b">
                     <h3>UI Sounds</h3>
                     <p>
                         Least Imporatance<br />
@@ -366,7 +367,7 @@
                         Description: Create sounds that fit the theme or the game, and style of the UI elements
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Enemy AI</h3>
                     <p>
                         High Imporatance<br />
@@ -376,7 +377,7 @@
                         Description: Get a working Enemy AI system up and running that is usable for testing
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Pause Menu</h3>
                     <p>
                         Medium Imporatance<br />
@@ -386,7 +387,7 @@
                         Description: Create an efficient and clean pause menu
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Weapon Concept</h3>
                     <p>
                         Low Imporatance<br />
@@ -396,7 +397,7 @@
                         Description: Come up with some concept ideas for the weapons
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Level Art</h3>
                     <p>
                         High Imporatance<br />
@@ -406,7 +407,7 @@
                         Description: Work on the level art for the first level
                     </p>
                 </div> 
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Main Antagonist Concept</h3>
                     <p>
                         Low Imporatance<br />
@@ -416,7 +417,7 @@
                         Description: Brainstorm, concept ideas for the main antagonist
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Design Level 2</h3>
                     <p>
                         Medium Imporatance<br />
@@ -426,7 +427,7 @@
                         Description: Design level two, "Cloud 9"
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Level Programming</h3>
                     <p>
                         Low Imporatance<br />
@@ -436,7 +437,7 @@
                         Description: Create the function that allows the game to go from one level to the next
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Combat</h3>
                     <p>
                         High Imporatance<br />
@@ -446,7 +447,7 @@
                         Description: Work on the initial strength and balancing of the weapons
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Vehicle Sounds</h3>
                     <p>
                         Low Imporatance<br />
@@ -456,7 +457,7 @@
                         Description: Gather potential sounds for in game vehicles
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Design Level 3</h3>
                     <p>
                         Low Imporatance<br />
@@ -466,7 +467,7 @@
                         Description: Design Level Three, "We are the Champions: Of the World"
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Multiplayer Menu</h3>
                     <p>
                         Low Imporatance<br />
@@ -476,7 +477,7 @@
                         Description: Design and Implement the multiplayer pre-game menu
                     </p>
                 </div>
-                <div data-role="collapsible">
+                <div data-role="collapsible" data-theme="b">
                     <h3>Voice Acting</h3>
                     <p>
                         Least Imporatance<br />
@@ -503,13 +504,13 @@
     <!--Info-->
     <div data-role="page" id="info">
     	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Game Developer Aid</h1>
+        	<h1><img src="img/GDALogo.png" width="160" height="50" /> </h1>
         </div>
         <div data-role="content">
         	<ul data-role="listview">
                 <li><a href="../Gold/index.html" data-ajax="false">Gold</a></li>
-                <li><a href="https://github.com/b58855/MIU/tree/master/Week3" data-ajax="false">Git Repo</a></li>
-                <li><a href="http://b58855.github.io/MIU/Week3/Bronze" data-ajax="false">Git gh-pages</a></li>
+                <li><a href="https://github.com/b58855/MIU/tree/master/Week4" data-ajax="false">Git Repo</a></li>
+                <li><a href="http://b58855.github.io/MIU/Week4/Bronze" data-ajax="false">Git gh-pages</a></li>
             </ul>
         </div>
         <div data-role="footer" data-position="fixed" data-theme="b">
