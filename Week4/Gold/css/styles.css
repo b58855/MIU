@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document */
+.centerText {
+	text-align: center;
+}
+#feature {
+	background-image: url(../img/GDA.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 220px;
+}
+label.error{
+	display: block;
+	margin: 10px 0;
+	color: #F00;
+}
+#cta {
+	top: 185px;
+}
+#errorslink{
+	display: none;
+}
+.mandatory {
+	color: #F00;
+}.browseButton {
+	border: thin ridge #09F;
+	background-color: #FFF;
+}
+.inputHint {
+	font-size: 12px;
+	height: 2px;
+}
+#requiredText {
+	height: 5px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	font-size: 11px;
+}
+.background {
+	background-image: url(../img/background.jpg);
+}
