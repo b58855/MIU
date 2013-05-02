@@ -1,0 +1,816 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+		<!--Gold-->
+		<meta charset="utf-8"/>
+        <meta name="description" content="To do list"/>
+        <meta name="keywords" content=""/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="viewport" content="user-scalable=no, width=device-width"/>
+        <meta name="viewport" content="target-densitydpi=device-dpi"/>
+        <meta name="HandheldFriendly" content="True"/>
+        <meta name="MobileOptimized" content="320"/>
+        
+		<title>Home</title>
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <link href="css/themes/green-theme-one.min.css" rel="stylesheet" />
+    	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<body>
+	<!--Home-->
+	<div data-role="page" id="home">
+    	<div data-role="header" data-position="fixed" data-theme="a">
+        	<div>
+       	    	<img src="img/GDALogo.png" width="160" height="50" /> 
+            </div>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<div>
+                <form>
+                    <input name="search" id="search" value="" placeholder="Search" type="search" data-theme="c">
+                </form>
+            </div>
+        	<!--Feature-->
+        	<div id="feature">
+            	<a href="#addItem" data-role="button" data-theme="b" id="cta">Add an Item</a>
+            </div>
+            <!--Browse-->
+            <ul data-role="listview" data-inset="true" >
+            	<li data-role="list-divider" data-theme="a" class="centerText">Browse Categories</li>
+            </ul>
+           	<div class="ui-grid-a">
+            	<div class="ui-block-a">
+                	<a href=#design>
+           	    		<img src="img/Design80.png" width="145" height="72" alt="Design"/>
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                	<a href=#programming>
+           	    		<img src="img/Programming80.png" width="144" height="72" alt="Programming" />
+                    </a>
+                </div>
+                <div class="ui-block-a">
+                	<a href=#art>
+           	    		<img src="img/Art80.png" width="145" height="72" alt="Art" />
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                	<a href=#sound>
+           	    		<img src="img/Sound80.png" width="144" height="72" alt="Sound" />
+                    </a>
+                </div>
+                <div class="ui-block-a">
+                	<a href=#ui>
+                    	<img src="img/UI80.png" width="289" height="72" alt="UI" />
+                   	</a> 	
+                </div>
+         	</div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home" class="ui-btn-active">Home</a></li>
+                    <li><a href="#allItems">All Items</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#addItem">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Design Browse Page-->
+    <div data-role="page" id="design" class="background">
+    	<div data-role="header" data-position="fixed" data-theme="a">
+			<div>
+       	    	<img src="img/GDALogo.png" width="160" height="50" /> 
+            </div>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<ul data-role="listview">
+                <li>
+                    <img src="img/Design80.png" width="80" height="80" />
+                    <h3>Design Items</h3>
+                    <p>All of your items within the Design category.</p>
+                </li>
+            </ul>
+            <ul data-role="listview" data-filter="true">
+                <div data-role="collapsible">
+                    <h3>Design Level 1</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 03/22/2013<br />
+                        End Date: 03/28/2013<br />
+                        Hours: 30<br />
+                        Description: Design the first level, "Ides of March" of the game. Start with a bang for an introduction
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Design Level 2</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 05/20/2013<br />
+                        End Date: 05/28/2013<br />
+                        Hours: 25<br />
+                        Description: Design level two, "Cloud 9"
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Combat</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 06/10/2013<br />
+                        End Date: 06/28/2013<br />
+                        Hours: 50<br />
+                        Description: Work on the initial strength and balancing of the weapons
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Design Level 3</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 06/22/2013<br />
+                        End Date: 06/28/2013<br />
+                        Hours: 25<br />
+                        Description: Design Level Three, "We are the Champions: Of the World"
+                    </p>
+                </div>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#allItems">All Items</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#addItem">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Progrmmming Browse Page-->
+    <div data-role="page" id="programming" class="background">
+    	<div data-role="header" data-position="fixed" data-theme="a">
+        	<div>
+       	    	<img src="img/GDALogo.png" width="160" height="50" /> 
+            </div>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<ul data-role="listview">
+                <li>
+                    <img src="img/Programming80.png" width="80" height="80" />
+                    <h3>Programming Items</h3>
+                    <p>All of your items within the Programming category.</p>
+                </li>
+            </ul>
+            <ul data-role="listview" data-filter="true">
+            	<div data-role="collapsible">
+                    <h3>Particle Engine</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Create a good and efficient particle engine
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Level 1 Scripting</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Script all of the events of level one
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Enemy AI</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 05/26/2013<br />
+                        Hours: 50<br />
+                        Description: Get a working Enemy AI system up and running that is usable for testing
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Level Programming</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 06/01/2013<br />
+                        End Date: 06/10/2013<br />
+                        Hours: 10<br />
+                        Description: Create the function that allows the game to go from one level to the next
+                    </p>
+                </div>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#allItems">All Items</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#addItem">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Art Browse Page-->
+    <div data-role="page" id="art" class="background">
+    	<div data-role="header" data-position="fixed" data-theme="a">
+        	<div>
+       	    	<img src="img/GDALogo.png" width="160" height="50" /> 
+            </div>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<ul data-role="listview">
+                <li>
+                    <img src="img/Art80.png" width="80" height="80" />
+                    <h3>Art Items</h3>
+                    <p>All of your items within the Art category.</p>
+                </li>
+            </ul>
+
+            <ul data-role="listview" data-filter="true">
+                <div data-role="collapsible">
+                    <h3>Main Character Concept Art</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 03/19/2013<br />
+                        End Date: 03/24/2013<br />
+                        Hours: 5<br />
+                        Description: Outline some first ideas
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Weapon Concept</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 04/02/2013<br />
+                        End Date: 04/04/2013<br />
+                        Hours: 20<br />
+                        Description: Come up with some concept ideas for the weapons
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Main Antagonist Concept</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 04/19/2013<br />
+                        End Date: 04/22/2013<br />
+                        Hours: 10<br />
+                        Description: Brainstorm, concept ideas for the main antagonist
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Level Art</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/09/2013<br />
+                        End Date: 04/24/2013<br />
+                        Hours: 30<br />
+                        Description: Work on the level art for the first level
+                    </p>
+                </div>              
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#allItems">All Items</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#addItem">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Sound Browse Page-->
+    <div data-role="page" id="sound" class="background">
+    	<div data-role="header" data-position="fixed" data-theme="a">
+        	<div>
+       	    	<img src="img/GDALogo.png" width="160" height="50" /> 
+            </div>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<ul data-role="listview">
+                <li>
+                    <img src="img/Sound80.png" width="80" height="80" />
+                    <h3>Sound Items</h3>
+                    <p>All of your items within the Sound category.</p>
+                </li>
+            </ul>
+
+            <ul data-role="listview" data-filter="true">
+                <div data-role="collapsible">
+                    <h3>Gun Sounds</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 03/20/2013<br />
+                        End Date: 03/20/2013<br />
+                        Hours: 8<br />
+                        Description: Go to the firing range, and record some sounds for pistols and assault rifles
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>UI Sounds</h3>
+                    <p>
+                        Least Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Create sounds that fit the theme or the game, and style of the UI elements
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Vehicle Sounds</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 06/10/2013<br />
+                        End Date: 06/30/2013<br />
+                        Hours: 30<br />
+                        Description: Gather potential sounds for in game vehicles
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Voice Acting</h3>
+                    <p>
+                        Least Imporatance<br />
+                        Start Date: 08/01/2013<br />
+                        End Date: 10/24/2013<br />
+                        Hours: 200<br />
+                        Description: Record the voice actors
+                    </p>
+                </div>              
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#allItems">All Items</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#addItem">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--UI Browse Page-->
+    <div data-role="page" id="ui" class="background">
+    	<div data-role="header" data-position="fixed" data-theme="a">
+        	<div>
+       	    	<img src="img/GDALogo.png" width="160" height="50" /> 
+            </div>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<ul data-role="listview">
+                <li>
+                    <img src="img/UI80.png" width="80" height="80" />
+                    <h3>User Interface Items</h3>
+                    <p>All of your items within the User Interface category.</p>
+                </li>
+            </ul>
+
+            <ul data-role="listview" data-filter="true">
+                <div data-role="collapsible">
+                    <h3>Start Menu</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 03/19/2013<br />
+                        End Date: 03/23/2013<br />
+                        Hours: 15<br />
+                        Description: Design and program the start menu
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Pause Menu</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 04/02/2013<br />
+                        End Date: 04/04/2013<br />
+                        Hours: 10<br />
+                        Description: Create an efficient and clean pause menu
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>HUD</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Create the most important UI element the HUD to be unobtrusive, but informative
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Multiplayer Menu</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 07/19/2013<br />
+                        End Date: 07/24/2013<br />
+                        Hours: 15<br />
+                        Description: Design and Implement the multiplayer pre-game menu
+                    </p>
+                </div>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#allItems">All Items</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#addItem">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     <!--Newsstream-->
+    <div data-role="page" id="allItems" class="background">
+    	<div data-role="header" data-position="fixed" data-theme="a">
+        	<div>
+       	    	<img src="img/GDALogo.png" width="160" height="50" /> 
+            </div>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<ul data-role="listview" data-filter="true">
+                <div data-role="collapsible">
+                    <h3>Start Menu</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 03/19/2013<br />
+                        End Date: 03/23/2013<br />
+                        Hours: 15<br />
+                        Description: Design and program the start menu
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Main Character Concept Art</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 03/19/2013<br />
+                        End Date: 03/24/2013<br />
+                        Hours: 5<br />
+                        Description: Outline some first ideas
+                    </p>
+                </div>
+                 <div data-role="collapsible">
+					<h3>Gun Sounds</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 03/20/2013<br />
+                        End Date: 03/20/2013<br />
+                        Hours: 8<br />
+                        Description: Go to the firing range, and record some sounds for pistols and assault rifles
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                     <h3>Design Level 1</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 03/22/2013<br />
+                        End Date: 03/28/2013<br />
+                        Hours: 30<br />
+                        Description: Design the first level, "Ides of March" of the game. Start with a bang for an introduction
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Particle Engine</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Create a good and efficient particle engine
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>HUD</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Create the most important UI element the HUD to be unobtrusive, but informative
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Level 1 Scripting</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Script all of the events of level one
+                    </p>
+                </div>
+                 <div data-role="collapsible">
+                    <h3>UI Sounds</h3>
+                    <p>
+                        Least Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 04/28/2013<br />
+                        Hours: 50<br />
+                        Description: Create sounds that fit the theme or the game, and style of the UI elements
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Enemy AI</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/01/2013<br />
+                        End Date: 05/26/2013<br />
+                        Hours: 50<br />
+                        Description: Get a working Enemy AI system up and running that is usable for testing
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Pause Menu</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 04/02/2013<br />
+                        End Date: 04/04/2013<br />
+                        Hours: 10<br />
+                        Description: Create an efficient and clean pause menu
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Weapon Concept</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 04/02/2013<br />
+                        End Date: 04/04/2013<br />
+                        Hours: 20<br />
+                        Description: Come up with some concept ideas for the weapons
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Level Art</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 04/09/2013<br />
+                        End Date: 04/24/2013<br />
+                        Hours: 30<br />
+                        Description: Work on the level art for the first level
+                    </p>
+                </div> 
+                <div data-role="collapsible">
+                    <h3>Main Antagonist Concept</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 04/19/2013<br />
+                        End Date: 04/22/2013<br />
+                        Hours: 10<br />
+                        Description: Brainstorm, concept ideas for the main antagonist
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Design Level 2</h3>
+                    <p>
+                        Medium Imporatance<br />
+                        Start Date: 05/20/2013<br />
+                        End Date: 05/28/2013<br />
+                        Hours: 25<br />
+                        Description: Design level two, "Cloud 9"
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Level Programming</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 06/01/2013<br />
+                        End Date: 06/10/2013<br />
+                        Hours: 10<br />
+                        Description: Create the function that allows the game to go from one level to the next
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Combat</h3>
+                    <p>
+                        High Imporatance<br />
+                        Start Date: 06/10/2013<br />
+                        End Date: 06/28/2013<br />
+                        Hours: 50<br />
+                        Description: Work on the initial strength and balancing of the weapons
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Vehicle Sounds</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 06/10/2013<br />
+                        End Date: 06/30/2013<br />
+                        Hours: 30<br />
+                        Description: Gather potential sounds for in game vehicles
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Design Level 3</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 06/22/2013<br />
+                        End Date: 06/28/2013<br />
+                        Hours: 25<br />
+                        Description: Design Level Three, "We are the Champions: Of the World"
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Multiplayer Menu</h3>
+                    <p>
+                        Low Imporatance<br />
+                        Start Date: 07/19/2013<br />
+                        End Date: 07/24/2013<br />
+                        Hours: 15<br />
+                        Description: Design and Implement the multiplayer pre-game menu
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Voice Acting</h3>
+                    <p>
+                        Least Imporatance<br />
+                        Start Date: 08/01/2013<br />
+                        End Date: 10/24/2013<br />
+                        Hours: 200<br />
+                        Description: Record the voice actors
+                    </p>
+                </div>  
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#allItems" class="ui-btn-active">All Items</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#addItem">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Info-->
+    <div data-role="page" id="info" class="background">
+    	<div data-role="header" data-position="fixed" data-theme="a">
+        	<div>
+       	    	<img src="img/GDALogo.png" width="160" height="50" /> 
+            </div>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<ul data-role="listview">
+            	<br />
+                <li><a href="../Bronze/index.html" data-ajax="false">Bronze</a></li><br />
+                <li><a href="https://github.com/b58855/MIU/tree/master/Week4" data-ajax="false">Git Repo</a></li><br />
+                <li><a href="http://b58855.github.io/MIU/Week4/Gold" data-ajax="false">Git gh-pages</a></li><br />
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <!--NavBar-->
+            <div data-role="navbar">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#allItems">All Items</a></li>
+                    <li><a href="#info" class="ui-btn-active">Info</a></li>
+                    <li><a href="#addItem">Add Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Add Item Form-->
+    <div data-role="page" id="addItem" class="background">
+        	<div data-role="header" data-position="fixed" data-theme="a">
+               	<div>
+       	    		<img src="img/GDALogo.png" width="160" height="50" /> 
+            	</div>
+            </div>
+            <div data-role="content" data-theme="a">
+            	<p class="mandatory" id="requiredText">*required</p>
+            	<form action="" id="addItemForm">
+                	<!--
+                	Selection form to select the category of item
+                	Is required
+                	-->
+                    <div data-role="fieldcontain">
+                        <label for="Categories">*Category:</label>
+                        <select name="Categories" id="categories" class="required">
+                        	<option data-placeholder="true" value>Select Category</option>
+                        	<optgroup label="Categories">
+                                <option value="programming">Programming</option>
+                                <option value="design">Design</option>
+                                <option value="art">Art</option>
+                                <option value="sound">Sound</option>
+                                <option value="ui">UI</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <!--
+                	text form to give list item a name
+                	Is required
+                	-->
+                    <div data-role="fieldcontain">
+                        <label for="Task">*Task:</label>
+                        <input type="text" name="Task" id="task" class="required" placeholder="The Name of the Task" data-theme="c">
+                    </div>
+                    <!--
+                	text form to give list item a name
+                	Is required
+                	-->
+                    <div data-role="fieldcontain">
+                        <label for="assigned">Assigned To:</label>
+                        <input type="text" name="assigned" id="assigned" placeholder="John Doe" data-theme="c">
+                        <p class="inputHint">The person who will perform this task.</p>
+                    </div>
+                    <!--
+                	Radio group to select the importance of list item
+                	Has Default set to Most Important
+                	-->
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <legend>Importance:</legend>
+                            <input name="Importance" type="radio" value="Very" id="mostImportant" class="data required" checked="checked">
+                            <label for="mostImportant">Most Importance:</label>
+                            <input name="Importance" type="radio" value="Some" id="important">
+                            <label for="important">Some Importance:</label>
+                            <input name="Importance" type="radio" value="Little" id="leastImportant">
+                            <label for="leastImportant">Little Importance:</label>
+                        </fieldset>
+                    </div>
+                    <!--
+                	The day to start the task
+                	Is required
+                	-->
+                    <div data-role="fieldcontain">
+                        <label for="StartDate">*Start Date:</label>
+                        <input name="StartDate" type="date" id="startDate" class="required date" data-theme="c">
+                    </div>
+                    <!--
+                	The due date of the task
+                	Is required
+                	-->
+                    <div data-role="fieldcontain">
+                        <label for="EndDate">*End Date:</label>
+                        <input name="EndDate" type="date" id="endDate" class="required date" data-theme="c">
+                    </div>
+                    <!--
+                	Input the amount of hours expected to take working on this task
+                	not required
+                	-->
+                    <div data-role="fieldcontain">
+                        <label for="hours">Hours of Work:</label>
+                        <input name="hours" type="range" id="hours" value="10" min="0" max="500" data-theme="c">
+                    </div>
+                    <!--
+                	Allows for there to be a short description on the task
+                	not required
+                	-->
+                    <div data-role="fieldcontain">
+                        <label for="description">Description:</label>
+                        <textarea name="description" id="description" placeholder="Short description of the goal of the task" data-theme="c"></textarea>
+                    </div>
+                    <div data-role="fieldcontain">
+                    	<input type="submit" value="Submit Item" data-theme="a"/><br>
+                        <input type="reset" value="Reset Form" data-theme="b"/>            
+                    </div>
+                    
+                </form>
+                <a href="#errorPage" id="errorslink" data-rel="dialog">Errors</a>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+            	<!--NavBar-->
+            	<div data-role="navbar">
+            		<ul>
+                		<li><a href="#home">Home</a></li>
+                    	<li><a href="#allItems">All Items</a></li>
+                    	<li><a href="#info">Info</a></li>
+                    	<li><a href="#addItem"  class="ui-btn-active">Add Item</a></li>
+                	</ul>
+            	</div>
+        </div>
+        </div>
+        <!--Displays the missing fields upon submission-->
+        <div data-role="dialog" id="errorPage">
+        	<div data-role="header" data-position="fixed">
+                <h3>Missing Fields</h3>
+            </div>
+            <div data-role="content">
+            	<ul>
+                	<li>test</li>
+                </ul>
+            </div>
+       </div>
+	<!--Javascript Files-->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <script src="js/libs/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
